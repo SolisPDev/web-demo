@@ -1,0 +1,173 @@
+/*****************************************************/
+/* Estilos para seccion animacion Demo               */
+/* Por: Antonio Solis Perales                        */
+/* info@horizondevs.net                              */
+/*****************************************************/
+/* Importación de fuentes  */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Jura:wght@300..700&display=swap");
+/* Variables Iniciales */
+/***********************/
+:root {
+  /* Fonts types         */
+  --fuente-jura: "Jura", sans-serif;
+  --fuente-cutive: "Cutive Mono", monospace;
+
+  /* Colores del sitio   */
+  --color-fondo: rgb(147, 163, 162);
+  --color-texto-normal: rgb(10,100,10);
+  --color-texto-resaltado: rgb(158, 226, 33);
+  --color-fondo-footer: rgb(255,255,255);
+  --color-btn: rgb(160,210,92);
+  --color-btn-hover:rgb(214,210,77);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+body{
+    background-color: var(--color-fondo);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    font-family: var(--fuente-jura);
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    padding: 0%;
+    align-items:center ;
+    width: 100%;
+  }
+  
+  .logo{
+    display: flex;
+    width: 5%;
+    margin-top: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+
+a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-family: var(--fuente-jura);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a{
+    transition: .3s;
+    color: var(--color-texto-normal);
+}
+
+.nav-area li a:hover{
+    color:var(--color-btn-hover);
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;   
+}
+
+/* **********************************
+   *******  AREA DE TRABAJO    ****** 
+   **********************************/
+.about-area{
+    font-family: var(--fuente-jura);
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 50px;
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    color: #fff;
+    margin: 0;
+}
+
+.about-area h2{
+    font-size: 2.5rem;
+    margin-bottom: 21px;
+}
+
+.content{
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-area p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.about-area a{
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    color: #262626;
+    font-weight: 600;
+
+}
+
+.img-area{
+    margin-top: 15px;
+    filter: grayscale(90%);
+    transition: filter 0.3s ease;
+}
+
+.img-area:hover{
+    filter: none;
+}
+
+.img-area img{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 1 rgba(0,0,0,0.5);
+}
+
+
+
+
+/* **********************************
+   *******     FOOTER     *********** 
+   **********************************/
+.footer {
+    font-family: var(--fuente-jura);
+    font-size: .85rem;
+    text-align: center;
+    background: var(--color-fondo-footer);
+    padding: 5px 0 0 0;
+  }
+  
+  .footer_text a {
+    color: var(--color-texto-normal);
+    text-decoration: none;
+  }
