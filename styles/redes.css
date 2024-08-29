@@ -87,7 +87,6 @@ a{
     height: 100%;
     border: 1px solid black;
     overflow: auto;
-    background-color: black;
     background-size: cover;
     background-position: center center;   
 }
@@ -95,87 +94,53 @@ a{
 /* **********************************
    *******  AREA DE TRABAJO    ****** 
    **********************************/
-.about-area{
-    font-family: var(--fuente-jura);
-    font-size: 1.5rem;
-    font-weight: 900;
+.redes-area{
+    display: grid;
+    place-items: center;
+    height: 75vh;
+
+}
+
+.social-icons{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 50px;
-    background: linear-gradient(to right, #b92b27, #1565c0);
-    color: #fff;
-    margin: 0;
-}
-
-.about-area h2{
-    font-size: 2.5rem;
-    margin-bottom: 21px;
-}
-
-.content{
-    max-width: 500px;
-    text-align: center;
-}
-
-.about-area p{
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.about-area a{
-    text-decoration: none;
-    background: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    border-radius: 50px;
-    color: #262626;
-    font-weight: 600;
-
-}
-
-.img-area{
-    margin-top: 15px;
-    filter: grayscale(90%);
-    transition: filter 0.3s ease;
-}
-
-.img-area:hover{
-    filter: none;
-}
-
-.img-area img{
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 1 rgba(0,0,0,0.5);
-}
-
-@media screen and (min-width: 991px) {
+    justify-content: space-between;
+    width: 170px;
     
-
-    .content{
-        margin-right: 50px;
-        text-align: left;
-    }
-
-    .img-area{
-        margin-top: 15px;
-    }
 }
 
-@media (max-width: 600px){
-    .about-area{
-        padding: 7% 25px;
-    }
-
-    .about-area p{
-        font-size: 0.8rem;
-        line-height: 1.6;
-    }
+.social-icon{
+    box-shadow: 0 0 0 10px rgba(255,255,255, 0.3) inset;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out 0s;
+    background-size: cover;
+    background-position: center center;
 }
+
+.social-icon:hover{
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 1) inset;
+    transform: scale(1.2,1.2);
+}
+
+.social-icon i{
+    font-size: 40px;
+    color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.8s ease-in-out 0s;
+}
+
+.social-icon:hover i{
+    opacity: 1;
+    transform: scale(.8);
+
+
+}
+
 
 /* **********************************
    *******     FOOTER     *********** 

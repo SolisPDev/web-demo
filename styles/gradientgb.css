@@ -87,7 +87,6 @@ a{
     height: 100%;
     border: 1px solid black;
     overflow: auto;
-    background-color: black;
     background-size: cover;
     background-position: center center;   
 }
@@ -95,87 +94,47 @@ a{
 /* **********************************
    *******  AREA DE TRABAJO    ****** 
    **********************************/
-.about-area{
-    font-family: var(--fuente-jura);
-    font-size: 1.5rem;
-    font-weight: 900;
+.gradient-area{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 2% 50px;
-    background: linear-gradient(to right, #b92b27, #1565c0);
-    color: #fff;
+    justify-content: center;
+    height: 79.5vh;
     margin: 0;
+    background: linear-gradient(135deg,#07090f,#2b5876);
+    overflow: hidden;
 }
 
-.about-area h2{
-    font-size: 2.5rem;
-    margin-bottom: 21px;
-}
-
-.content{
-    max-width: 500px;
+h1{
+    padding: 10%;
+    border-radius: 25px;
     text-align: center;
+    font-family: var(--fuente-cutive);
+    font-size: 7em;
+    text-transform: uppercase;
+    background: linear-gradient(45deg,pink,green,yellow,deepskyblue,white,magenta);
+    --webkit-background-clip: text;
+    background-size: 500%;
+    color: rgba(0, 0, 0, 0.1);
+    line-height: .8;
+    animation: animate 5s infinite linear;
+}
+h1 span{
+    font-size: 0.8em ;
+    color: rgba(0, 0, 0, 0.2);
 }
 
-.about-area p{
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.about-area a{
-    text-decoration: none;
-    background: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    border-radius: 50px;
-    color: #262626;
-    font-weight: 600;
-
-}
-
-.img-area{
-    margin-top: 15px;
-    filter: grayscale(90%);
-    transition: filter 0.3s ease;
-}
-
-.img-area:hover{
-    filter: none;
-}
-
-.img-area img{
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 1 rgba(0,0,0,0.5);
-}
-
-@media screen and (min-width: 991px) {
-    
-
-    .content{
-        margin-right: 50px;
-        text-align: left;
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
     }
-
-    .img-area{
-        margin-top: 15px;
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
     }
 }
 
-@media (max-width: 600px){
-    .about-area{
-        padding: 7% 25px;
-    }
-
-    .about-area p{
-        font-size: 0.8rem;
-        line-height: 1.6;
-    }
-}
 
 /* **********************************
    *******     FOOTER     *********** 
